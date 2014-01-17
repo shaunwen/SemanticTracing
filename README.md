@@ -23,9 +23,9 @@ Updates
 -------
  - 2014-1-15 -- Finished SemanticTracing module.
  - 2014-1-9  -- Added src/SemanticTracing.java; 
- 				Added src/be/fnord/util/processModel/Graph_ST.java; 
-				Added src/be/fnord/util/processModel/Vertex_ST.java;
-				Added src/be/fnord/util/processMel/Edge_ST.java.  
+ 		added src/be/fnord/util/processModel/Graph_ST.java; 
+		added src/be/fnord/util/processModel/Vertex_ST.java;
+		added src/be/fnord/util/processMel/Edge_ST.java.  
 
 
 --------------------------------------------------
