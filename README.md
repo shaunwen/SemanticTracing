@@ -1,7 +1,7 @@
 SemanticTracing for TextSeer 
 =======================
 
-This project aims at realising the semantic tracing of BPMN (Business Process Model and Notation) model. Specifically, given a effect scenario( a subset of a cummulative effect), the program is able to find out from which previous effect scenario it is resulted  during the effect accumulation. A sample output of the program is as following:
+This project aims at realising the semantic tracing of BPMN (Business Process Model and Notation) model. Specifically, given an effect scenario( a subset of a cummulative effect), the program is able to find out from which previous effect scenario it is resulted  during the effect accumulation. A sample output of the program is as following:
 
 ########Begin of sample output#######################
 Given effect scenario: (c) & (d)
