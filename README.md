@@ -1,4 +1,4 @@
-###SemanticTracing for TextSeer
+##SemanticTracing for TextSeer
 
 This project aims at realising the semantic tracing of BPMN (Business Process Model and Notation) model. Specifically, given an effect scenario( a subset of a cummulative effect), the program is able to find out from which previous effect scenario it is resulted during the effect accumulation. A sample output of the program is as following:
 
@@ -26,7 +26,7 @@ The SemanticTracing module consists of 4 programs:
             src/be/fnord/util/processMel/Edge_ST.java. 
 The JGraphT library is used in this project for dealing with graph data structure for manipulation of effect scenarios.
 
-##Updates
+###Updates
 
 2014-1-15 -- Finished SemanticTracing module. 
 2014-1-9  -- Added src/SemanticTracing.java; 
