@@ -26,7 +26,7 @@ The SemanticTracing module consists of 4 programs:
             src/be/fnord/util/processMel/Edge_ST.java. 
 The JGraphT library is used in this project for dealing with graph data structure for manipulation of effect scenarios.
 
-Updates
+##Updates
 
 2014-1-15 -- Finished SemanticTracing module. 
 2014-1-9  -- Added src/SemanticTracing.java; 
