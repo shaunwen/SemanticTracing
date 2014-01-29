@@ -20,6 +20,7 @@ import be.fnord.util.processModel.util.GraphTransformer;
 
 public class SemanticTracing {
 
+	private static final boolean _DEBUG = false ; // a.e.__DEBUG; -- Added during code review
 	private LinkedList<Trace> traces = null;
 
 	/**
@@ -86,13 +87,35 @@ public class SemanticTracing {
 			for (Edge_ST e : gST.edgeSet()) {
 				// build up links between effect scenarios
 				if (gST.getEdgeTarget(e).esWFF.equals(esWFF)) {
-					System.out.println("\nGiven effect scenario: " + esWFF);
-					System.out.println("Found accumulation:  " +
+					a.e.println("Given an effect scenario, locate the task and effect scenario it most likely resulted from");
+					a.e.println("Given effect scenario: " + esWFF);
+					a.e.println("Found accumulation:  " +
 						gST.getEdgeSource(e).esWFF + " --> " +
 						gST.getEdgeTarget(e).esWFF);
+					a.e.println("");
 				}
+
 			}
 		}
+		
+		if(_DEBUG){
+            //test for edges in the new built graph
+            System.out.println("edges count " + gST.edgeSet().size());
+            for(Edge_ST e: gST.edgeSet()){
+                    a.e.println(gST.getEdgeSource(e).esWFF + " to " + gST.getEdgeTarget(e).esWFF);
+//                                        System.out.println(gST.getEdgeSource(e).esWFF);
+            }
+            
+            //test for display of the vertices in the new Graph_ST
+            System.out.println("\nThe number of nodes in Graph_ST: " + gST.vertexSet().size());
+            for(Vertex_ST vst: gST.vertexSet()){
+                    a.e.println("\n---Begin a node in the graph---");
+                    a.e.println("taskName: " + vst.taskName);
+                    a.e.println("immediate effect: " + vst.immWFF);
+                    a.e.println("cummulative effect: " + vst.esWFF);
+                    a.e.println("---End a node in the graph----\n");
+            }
+    }
 
 	}
 
@@ -147,9 +170,12 @@ public class SemanticTracing {
 
 		// start tracing
 		SemanticTracing st = new SemanticTracing(pathOfModel);
+		
 		st.track(kb, givenEff1);
 		st.track(kb, givenEff2);
 		st.track(kb, givenEff3);
+		
+		
 
 	}
 }
