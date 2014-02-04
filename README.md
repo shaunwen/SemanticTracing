@@ -21,6 +21,7 @@ SemanticTracing is developed as an extension of the TextSeer(https://github.com/
 
 The SemanticTracing module consists of 4 programs:
             src/SemanticTracing.java, 
+            src/be/fnord/util/logic/Accumulate_4ST.java,
             src/be/fnord/util/processModel/Graph_ST.java, 
             src/be/fnord/util/processModel/Vertex_ST.java, 
             src/be/fnord/util/processModel/Edge_ST.java. 
