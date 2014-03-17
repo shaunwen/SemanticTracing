@@ -29,6 +29,7 @@ The JGraphT library is used in this project for dealing with graph data structur
 
 ###Updates
 
+2014-3-17 -- Added src/Compensation.java.
 2014-1-15 -- Finished SemanticTracing module. 
 2014-1-9  -- Added src/SemanticTracing.java; 
              added src/be/fnord/util/logic/Accumulate_4ST.java;
