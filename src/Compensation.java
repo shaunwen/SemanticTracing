@@ -3,8 +3,11 @@ import java.util.LinkedHashSet;
 import be.fnord.util.logic.Accumulate_4ST;
 import be.fnord.util.logic.WFF;
 
+
+
 /**
  * @author Xiong Wen (xw926@uowmail.edu.au)
+ *
  */
 public class Compensation {
 
@@ -17,6 +20,13 @@ public class Compensation {
 	}
 
 	/**
+	 * Method for calculating Levenshtein Distance(edit distance) Version 1
+	 * 
+	 * a one string that needed in distance calculation
+	 * b the other string that needed in distance calculation
+	 * 
+	 * @return cost the Levenshtein Distance between the two strings
+	 * 
 	 * @param args
 	 */
 	public static int getDistance(String a, String b) {
@@ -43,6 +53,9 @@ public class Compensation {
 		return costs[b.length()];
 	}
 
+	/**
+	 * Method for calculating Levenshtein Distance(edit distance) Version 2
+	 */
 	public static int LevenshteinDistance(String s, String t) {
 
 		// degenerate cases
@@ -146,6 +159,8 @@ public class Compensation {
 		// accCheck.pairwise_acc(new WFF(
 		// vList.get(i - 1).get(x).esWFF), new WFF(
 		// vList.get(i).get(j).immWFF), kb, true);
+		
+		//for the edit distance, we just need to use the method: 
 
 	}
 
