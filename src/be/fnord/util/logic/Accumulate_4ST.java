@@ -121,8 +121,8 @@ public class Accumulate_4ST extends Accumulate {
 		}
 
 		// build links between effect scenario
-		for (int i = 1; i < vList.size(); i++) {
-			for (int j = 0; j < vList.get(i).size(); j++) {
+		for (int i = 1; i < vList.size(); i++) { //start checking from the second task
+			for (int j = 0; j < vList.get(i).size(); j++) { //check the es of a task
 				for (int x = 0; x < vList.get(i - 1).size(); x++) {
 
 					Accumulate_4ST accCheck = new Accumulate_4ST();

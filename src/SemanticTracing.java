@@ -20,7 +20,7 @@ import be.fnord.util.processModel.util.GraphTransformer;
 
 public class SemanticTracing {
 
-	private static final boolean _DEBUG = false ; // a.e.__DEBUG; -- Added during code review
+	private static final boolean _DEBUG = true ; // a.e.__DEBUG; -- Added during code review
 	private LinkedList<Trace> traces = null;
 
 	/**
