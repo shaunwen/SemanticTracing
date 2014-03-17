@@ -33,10 +33,14 @@ The JGraphT library is used in this project for dealing with graph data structur
 
 2014-1-15 -- Finished SemanticTracing module. 
 
-2014-1-9  -- Added src/SemanticTracing.java; 
+2014-1-9  -- Added src/SemanticTracing.java;
+
              added src/be/fnord/util/logic/Accumulate_4ST.java;
+             
              added src/be/fnord/util/processModel/Graph_ST.java; 
+             
              added src/be/fnord/util/processModel/Vertex_ST.java; 
+             
              added src/be/fnord/util/processMel/Edge_ST.java. 
 
 Apache License, Version 2.0, Apache License Version 2.0, January 2004 http://www.apache.org/licenses/
